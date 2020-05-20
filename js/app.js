@@ -1,9 +1,14 @@
 
-
+/***********Verificacion del lugar donde se encuentra el serviworker************** */
+const Url = window.location.href;
+const SwLocation = "/twittor/sw.js"
 
 /************************Conexion con el servir worker */
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js')
+    if(Url.includes("localhost")){
+        SwLocation = '/sw.js'
+    }
+    navigator.serviceWorker.register(SwLocation)
 }
 // Referencias de jQuery
 

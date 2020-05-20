@@ -8,9 +8,9 @@ const Cache_Inmutable = "Inmutable_v1";
 
 //App_Shell son todos los recursos necesario para el funcionamiento de mi aplicación
 const App_Shell = [
-    '/',
+    //'/',
     'index.html',
-    '/css/style.css',
+    'css/style.css',
     'img/favicon.ico',
     'img/avatars/hulk.jpg',
     'img/avatars/ironman.jpg',
